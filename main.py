@@ -87,6 +87,4 @@ image_frame.grid(row=3, column=1)
 image_label = tk.Label(master=image_frame)
 image_label.grid(row=3, column=1)
 
-
-
 window.mainloop()
