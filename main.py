@@ -26,6 +26,9 @@ def print_value(key=None):
 
         display_qr()
 
+    elif text == "":
+        print("wprowadź numer CMMS")
+
     return text
 
 def qr_preview(image_path):
@@ -44,7 +47,7 @@ def display_qr():
         image_label.image = qr_photo
 
 window = tk.Tk()
-window.geometry("410x300")
+window.geometry("200x200")
 
 # CMMS
 frame_cmms = tk.Frame(master=window)

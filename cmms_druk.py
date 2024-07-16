@@ -3,10 +3,6 @@ from pathlib import Path
 from ftplib import FTP
 
 
-def test():
-    print("test")
-
-
 def upload_file_via_ftp(server, username, password, local_file_path, remote_file_path):
     try:
         # Utworzenie obiektu sesji FTP
@@ -39,8 +35,6 @@ def drukuj(numer_cmms_in):
                              "^PR3,3 \n"
                              "~SD28\n"
                              "^RS8,,,3\n"
-                             # "^XZ\n"
-                             # "^XA \n"
                              f"^FO80,100^A0N,55^FD{numer_cmms}^FS \n"
                              f"^FO330,60^BQN,3,6,M^FDLA,{numer_cmms}^FS\n"
                              "^RFW,H,1,2,1^FD3000^FS\n"
